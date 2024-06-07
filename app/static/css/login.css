@@ -1,0 +1,56 @@
+*{
+    
+}
+
+
+body,html{
+    height: 100vh;
+    background-color: #f1f3f9;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Source Code Pro", monospace; */
+
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 100%;
+}
+
+.col-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh !important;
+
+}
+
+.container-card{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve */
+
+}
+
+.title-card{
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn-login{
+    width: 100%;
+    height: 3.5rem;
+    border-radius: .800rem;
+    font-weight: 500;
+}
+
+.input-3rem{
+    height: 3rem;
+}

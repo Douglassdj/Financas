@@ -1,0 +1,57 @@
+{% extends 'master.html' %}
+
+
+
+
+{% block content %}
+
+<div class="col-6 col-card-perfil m-0 p-0">
+
+    <div class="card-content">
+
+        <div class="row m-0">
+            <div class="col-12 col-photo">
+                <div class="photo-user">
+                    <img class="eu" src="{{url_for('static', filename='img/eu.jpg')}}" alt="">
+                </div>
+            </div>
+
+            <div class="col-12">
+                about
+            </div>
+
+            <div class="col">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+<div class="col">
+    cards
+</div>
+
+
+{% endblock %}
