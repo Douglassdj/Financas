@@ -64,14 +64,12 @@ class tb_usuario(database.Model, UserMixin):
                 cpf=cpf,
                 data_nascimento=data_nascimento,
                 telefone=telefone,
-                senha=senha
+                senha=senha,
             )
 
             database.session.add(query)
             database.session.commit()
 
-            print("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS", query)
-        
             return query
         except Exception as e:
 
