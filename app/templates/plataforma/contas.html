@@ -1,0 +1,124 @@
+{% extends 'master.html' %}
+
+
+
+
+{% block content %}
+
+
+<div class="col-3">
+
+    <div class="card card-default-conta card-add-conta">
+
+        <div class="card-body body-add-conta">
+            <h4>
+                <a href="" data-bs-toggle="modal" data-bs-target="#modal-add-conta">Adicionar conta</a>
+            </h4>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="col-3">
+
+    <div class="card card-default-conta ">
+
+        <div class="card-header card-header-defalt-conta">
+
+            <div class="left-header-card">
+
+                <div class="logo-conta">
+
+                </div>
+
+                <span>Título conta</span>
+
+            </div>
+
+            <span class="tipo-conta">Tipo da conta</span>
+
+
+        </div>
+
+        <div class="card-body card-body-default">
+
+            <div class="lerf-card-body-conta">
+                <span>Saldo atual</span>
+                <span>R$ 0,00</span>
+            </div>
+
+            <div class="rigth-card-body-conta">
+                <span>Saldo Previsto</span>
+                <span>R$ 0,00</span>
+            </div>
+
+
+        </div>
+
+        <div class="card-footer card-footer-default">
+            <a href="#">ADICIONAR DESPESA</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- Modal Adicionar conta-->
+
+<div class="modal fade" id="modal-add-conta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-content-default">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="_instituicao" class="form-label">Instituição</label>
+                        <input type="text" class="form-control form-control-conta" id="_instituicao"
+                            placeholder="R$ 0,00" value="" name="instituicao">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">Decrição</label>
+                        <input type="text" class="form-control form-control-conta" id="descricao"
+                            placeholder="Banco Santander" value="" name="descricao">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="_tipoconta" class="form-label">Decrição</label>
+
+                        <select class="form-select form-control-conta" aria-label="Default select example"
+                            id="_tipoconta" name="tipo_conta">
+                            <option selected disabled>Selecionar</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+{% endblock %}
